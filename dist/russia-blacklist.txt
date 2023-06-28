@@ -1,15 +1,19 @@
+0011.lt
 1d4.us
 adguard.com
 adminforge.de
+archive.md
 arcticfoxes.net
 artemislena.eu
 asmodei.ru
+baczek.me
 caioalonso.com
 cdninstagram.com
 com.sb
 coollib.net
 cutelab.space
 d420.de
+dailymotion.com
 eff.org
 esmailelbob.xyz
 facebook.com
@@ -20,6 +24,7 @@ fly.dev
 freedit.eu
 froth.zone
 ggpht.com
+ggtyler.dev
 gofile.io
 google.com
 google.ru
@@ -37,6 +42,7 @@ lambda.dance
 leptons.xyz
 lib.rus.ec
 lunar.icu
+meduza.io
 messenger.com
 moomoo.me
 nitter.at
@@ -47,6 +53,7 @@ nitter.nl
 nnmclub.to
 no-logs.com
 owacon.moe
+palveluntarjoaja.eu
 poast.org
 privacy.com.de
 privacydev.net
