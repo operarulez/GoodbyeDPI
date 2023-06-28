@@ -5,8 +5,9 @@ endif
 WINDIVERTHEADERS = ../../../include
 WINDIVERTLIBS = ../../binary
 MINGWLIB = /usr/x86_64-w64-mingw32/lib/
+BUILDDIR = ../$(CPREFIX)build
 
-TARGET = goodbyedpi.exe
+TARGET = $(BUILDDIR)/goodbyedpi.exe
 # Linking SSP does not work for some reason, the executable doesn't start.
 #LIBS = -L$(WINDIVERTLIBS) -Wl,-Bstatic -lssp -Wl,-Bdynamic -lWinDivert -lws2_32
 LIBS = -L$(WINDIVERTLIBS) -lWinDivert -lws2_32 -l:libssp.a
@@ -36,14 +37,14 @@ endif
 default: $(TARGET)
 all: default
 
-OBJECTS = $(patsubst %.c, %.o, $(wildcard *.c utils/*.c)) goodbyedpi-rc.o
+OBJECTS = $(patsubst %.c, $(BUILDDIR)/%.o, $(wildcard *.c utils/*.c)) $(BUILDDIR)/goodbyedpi-rc.o
 HEADERS = $(wildcard *.h utils/*.h)
 
-%.o: %.c $(HEADERS)
+$(BUILDDIR)/%.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
-goodbyedpi-rc.o:
-	$(CCWINDRES) goodbyedpi-rc.rc goodbyedpi-rc.o
+$(BUILDDIR)/goodbyedpi-rc.o:
+	$(CCWINDRES) goodbyedpi-rc.rc $(BUILDDIR)/goodbyedpi-rc.o
 
 .PRECIOUS: $(TARGET) $(OBJECTS)
 
@@ -51,5 +52,5 @@ $(TARGET): $(OBJECTS)
 	$(CC) $(OBJECTS) $(LDFLAGS) $(LIBS) -s -o $@
 
 clean:
-	-rm -f *.o utils/*.o
+	-rm -f $(BUILDDIR)/*.o $(BUILDDIR)/utils/*.o
 	-rm -f $(TARGET)

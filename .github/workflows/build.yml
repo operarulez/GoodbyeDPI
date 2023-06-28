@@ -47,13 +47,13 @@ jobs:
 
       - name: Compile x86_64
         run: >
-          cd src && make clean &&
+          cd src && make clean && mkdir -p ../x86_64-w64-mingw32-build/utils &&
           make CPREFIX=x86_64-w64-mingw32- BIT64=1 WINDIVERTHEADERS=../${{ env.WINDIVERT_BASENAME }}/include WINDIVERTLIBS=../${{ env.WINDIVERT_BASENAME }}/x64 -j4
       
       - name: Prepare x86_64 directory
         run: |
           mkdir goodbyedpi_x86_64_${{ steps.vars.outputs.sha_short }}
-          cp src/goodbyedpi.exe ${{ env.WINDIVERT_BASENAME }}/x64/*.{dll,sys} goodbyedpi_x86_64_${{ steps.vars.outputs.sha_short }}
+          cp x86_64-w64-mingw32-build/goodbyedpi.exe ${{ env.WINDIVERT_BASENAME }}/x64/*.{dll,sys} goodbyedpi_x86_64_${{ steps.vars.outputs.sha_short }}
 
       - name: Upload output file x86_64
         uses: actions/upload-artifact@v2
@@ -63,13 +63,13 @@ jobs:
 
       - name: Compile i686
         run: >
-          cd src && make clean &&
+          cd src && make clean && mkdir -p ../i686-w64-mingw32-build/utils &&
           make CPREFIX=i686-w64-mingw32- WINDIVERTHEADERS=../${{ env.WINDIVERT_BASENAME }}/include WINDIVERTLIBS=../${{ env.WINDIVERT_BASENAME }}/x86 -j4
 
       - name: Prepare x86 directory
         run: |
           mkdir goodbyedpi_x86_${{ steps.vars.outputs.sha_short }}
-          cp src/goodbyedpi.exe ${{ env.WINDIVERT_BASENAME }}/x86/*.{dll,sys} goodbyedpi_x86_${{ steps.vars.outputs.sha_short }}
+          cp i686-w64-mingw32-build/goodbyedpi.exe ${{ env.WINDIVERT_BASENAME }}/x86/*.{dll,sys} goodbyedpi_x86_${{ steps.vars.outputs.sha_short }}
 
       - name: Upload output file x86
         uses: actions/upload-artifact@v2
