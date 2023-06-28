@@ -5,5 +5,3 @@ echo Press any key if you're running it as administrator.
 pause
 sc stop "GoodbyeDPI"
 sc delete "GoodbyeDPI"
-sc stop "WinDivert1.4"
-sc delete "WinDivert1.4"

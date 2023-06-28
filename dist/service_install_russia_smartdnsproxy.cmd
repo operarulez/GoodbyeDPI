@@ -10,7 +10,7 @@ echo Press any key if you're running it as administrator.
 pause
 sc stop "GoodbyeDPI"
 sc delete "GoodbyeDPI"
-sc create "GoodbyeDPI" binPath= "\"%CD%\%_arch%\goodbyedpi.exe\" -f 1 -e 1 --wrong-seq --reverse-frag --max-payload --allow-no-sni --dns-addr 102.135.163.26 --dns-port 1512 --blacklist \"%CD%\russia-blacklist.txt\"" start= "auto"
+sc create "GoodbyeDPI" binPath= "\"%CD%\%_arch%\goodbyedpi.exe\" -f 1 -e 1 --wrong-seq --reverse-frag --max-payload --allow-no-sni --dns-addr 102.135.163.26 --dns-port 1512 --blacklist \"%CD%\russia-blacklist.txt\" --openvpn" start= "auto"
 sc description "GoodbyeDPI" "Passive Deep Packet Inspection blocker and Active DPI circumvention utility"
 sc start "GoodbyeDPI"
 
