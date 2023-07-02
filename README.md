@@ -67,6 +67,7 @@ Usage: goodbyedpi.exe [OPTION...]
                           (like file transfers) in already established sessions.
                           May skip some huge HTTP requests from being processed.
                           Default (if set): --max-payload 1200.
+ --openvpn                Detect OpenVPN TCP and fragment/send fake packet.
 
 
 LEGACY modesets:
