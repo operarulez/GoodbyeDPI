@@ -1,5 +1,6 @@
 0011.lt
 1d4.us
+activatica.org
 adguard.com
 adminforge.de
 archive.md
@@ -45,6 +46,8 @@ lunar.icu
 meduza.io
 messenger.com
 moomoo.me
+nation-news.ru
+nevnov.ru
 nitter.at
 nitter.cz
 nitter.hu
@@ -55,6 +58,7 @@ no-logs.com
 owacon.moe
 palveluntarjoaja.eu
 poast.org
+polit.info
 privacy.com.de
 privacydev.net
 privacytools.io
@@ -62,6 +66,8 @@ projectsegfau.lt
 prostovpn.org
 pufe.org
 rawbit.ninja
+riafan.ru
+rueconomics.ru
 rutor.info
 rutor.is
 rutor.org
