@@ -1,6 +1,3 @@
-WINDIVERTHEADERS = ../../../include
-WINDIVERTLIBS = ../../binary
-
 BUILDDIR = ../${CPREFIX}build
 TARGET = $(BUILDDIR)/goodbyedpi.exe
 # Linking SSP does not work for some reason, the executable doesn't start.
@@ -17,8 +14,12 @@ CFLAGS = -std=c99 -pie -fPIE -pipe -I$(WINDIVERTHEADERS) -L$(WINDIVERTLIBS) \
          -Wformat-signedness -Wstrict-overflow=2 -Wcast-align=strict \
          -Wfloat-equal -Wcast-align -Wsign-conversion -Wno-stringop-overflow -Wno-stringop-overread \
          #-fstack-protector-strong
+ifdef BIT64
 LDFLAGS = -fstack-protector -Wl,-O1,-pie,--dynamicbase,--nxcompat,--sort-common,--as-needed \
 -Wl,--image-base,0x140000000 -Wl,--disable-auto-image-base
+else
+LDFLAGS = -fstack-protector -Wl,-O1,-pie,--dynamicbase,--nxcompat,--sort-common,--as-needed
+endif
 
 ifdef BIT64
 	LDFLAGS += -Wl,--high-entropy-va -Wl,--pic-executable,-e,mainCRTStartup
