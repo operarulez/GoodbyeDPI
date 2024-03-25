@@ -1,5 +1,7 @@
 0011.lt
+1337x.to
 1d4.us
+4chan.org
 activatica.org
 adguard.com
 adminforge.de
@@ -29,9 +31,12 @@ ggtyler.dev
 gofile.io
 google.com
 google.ru
+googleapis.com
 googleusercontent.com
 gradle.org
 habedieeh.re
+hdrezka.ag
+hdrezka.tv
 hostux.net
 inpt.fr
 instagram.com
@@ -46,6 +51,7 @@ lunar.icu
 meduza.io
 messenger.com
 moomoo.me
+musicbrainz.org
 nation-news.ru
 nevnov.ru
 nitter.at
@@ -55,6 +61,7 @@ nitter.net
 nitter.nl
 nnmclub.to
 no-logs.com
+ntc.party
 owacon.moe
 palveluntarjoaja.eu
 poast.org
@@ -66,6 +73,8 @@ projectsegfau.lt
 prostovpn.org
 pufe.org
 rawbit.ninja
+readthedocs.org
+rezka.ag
 riafan.ru
 rueconomics.ru
 rutor.info
@@ -90,5 +99,8 @@ unofficialbird.com
 vpnbook.com
 vpngate.net
 whatever.social
+whoer.net
+workers.dev
+x.com
 youtube.com
 zona.media
