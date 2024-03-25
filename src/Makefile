@@ -1,18 +1,13 @@
-ifndef MSYSTEM
-	CPREFIX = x86_64-w64-mingw32-
-endif
-
 WINDIVERTHEADERS = ../../../include
 WINDIVERTLIBS = ../../binary
-MINGWLIB = /usr/x86_64-w64-mingw32/lib/
-BUILDDIR = ../$(CPREFIX)build
 
+BUILDDIR = ../${CPREFIX}build
 TARGET = $(BUILDDIR)/goodbyedpi.exe
 # Linking SSP does not work for some reason, the executable doesn't start.
 #LIBS = -L$(WINDIVERTLIBS) -Wl,-Bstatic -lssp -Wl,-Bdynamic -lWinDivert -lws2_32
 LIBS = -L$(WINDIVERTLIBS) -lWinDivert -lws2_32 -l:libssp.a
 CC = $(CPREFIX)gcc
-CCWINDRES = $(CPREFIX)windres
+CCWINDRES = windres
 CFLAGS = -std=c99 -pie -fPIE -pipe -I$(WINDIVERTHEADERS) -L$(WINDIVERTLIBS) \
          -O2 -D_FORTIFY_SOURCE=2 -fstack-protector \
          -Wall -Wextra -Wpedantic -Wformat=2 -Wformat-overflow=2 -Wformat-truncation=2 \
