@@ -11,6 +11,7 @@ artemislena.eu
 asmodei.ru
 baczek.me
 caioalonso.com
+cdaut.de
 cdninstagram.com
 com.sb
 coollib.net
@@ -18,11 +19,14 @@ cutelab.space
 d420.de
 dailymotion.com
 eff.org
+einfachzocken.eu
 esmailelbob.xyz
 facebook.com
 fb.com
 fbcdn.net
+fdn.fr
 flibusta.site
+flokinet.to
 fly.dev
 freedit.eu
 froth.zone
@@ -49,10 +53,12 @@ leptons.xyz
 lib.rus.ec
 lunar.icu
 meduza.io
+melmac.space
 messenger.com
 moomoo.me
 musicbrainz.org
 nation-news.ru
+nboeck.de
 nevnov.ru
 nitter.at
 nitter.cz
@@ -71,7 +77,9 @@ privacydev.net
 privacytools.io
 projectsegfau.lt
 prostovpn.org
+protokolla.fi
 pufe.org
+puffyan.us
 rawbit.ninja
 readthedocs.org
 rezka.ag
@@ -80,6 +88,7 @@ rueconomics.ru
 rutor.info
 rutor.is
 rutor.org
+rutracker.net
 rutracker.org
 smnz.de
 soopy.moe
@@ -90,6 +99,7 @@ tiekoetter.com
 tiktok.com
 torproject.org
 trom.tf
+tux.pizza
 twei.space
 twimg.com
 twirpx.com
